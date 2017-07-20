@@ -1,0 +1,481 @@
+		body{
+			font-family: "宋体", "Verdana","Arial",sans-serif;
+		}
+		.top{
+			width: 100%;
+			height: 30px;
+			background: #000;
+			opacity: 0.8;
+		}
+			/* 顶部导航条右侧*/ 
+
+		.topBar-left>ul>li{
+			float: left;
+			margin-right: 15px;
+			line-height: 30px;
+		}
+		.topBar-left .first{
+			margin-left: 175px;
+		}
+		.topBar-left .leftTwo a{
+			color: #f00;
+		}
+		.topBar-left .work a{
+			color: #0f0;
+		}
+		.topBar-left .newStudent a {
+			color: rgb(204,255,0);
+		}
+		.topBar-left .phono a, .topBar-left .line,.topBar-right .line,.topBar-right .auto a,
+		.topBar-right .repair a{
+			color: #c8cacd;
+		}
+		.topBar-left .phono a:hover,.topBar-right .auto a:hover,.topBar-right .repair a:hover{
+			color: #c15708;
+		}
+		/* 顶部导航条右侧*/ 
+		
+		.topBar-right>ul>li{
+			float: left;
+			text-align: right;
+			line-height: 30px;
+			margin-left: 15px;
+		}
+		.topBar-right .auto{
+			margin-left: 340px;
+		}
+		/*中间logo*/
+		.logo{
+			position: relative;
+			width: 100%;
+			height: 115px;
+			background: #47a;
+		}
+	  .logo	.zkyLogo{
+	  	position: absolute;
+	  	top: 20px;
+	  	left: 190px;
+	  }
+	  .logo .school{
+	  	position: absolute;
+	  	top:30px;
+	  	right: 193px;
+	  }
+
+	  /*logo下面的导航栏*/
+	  .navigator{
+	  	width: 100%;
+	  	height: 38px;
+	  	background: #47a;
+	  	border-top: 1px solid #0D182A;
+	  	border-bottom: 5px solid #CCCCCC;
+	  }
+	  .navigator>ul>li{
+	  	position: relative;
+	  	float: left;
+	  	line-height: 38px;
+	  	/*margin-right: 12px;*/
+	  	text-align: center;
+	  }
+	  .navigator>ul>li>a{
+	  	/*margin-right: 10px;*/
+	  	display: inline-block;
+	  	width: 105px;
+	  	height: 38px;
+	  	color: #fff;
+	  	font-size: 20px;
+	  }
+
+	  .navigator>ul>li a:hover{
+	  	background:#004098;
+	  	/*opacity: 0.6;*/
+	  }
+	  .first-page{
+	  	margin-left: 197px;
+	  }
+
+	  /*二级子菜单   院系信息*/
+	  .navigator .information{
+	  	display: none;
+	  	position: absolute;
+	  	z-index: 100;
+	  	top: 38px;
+	  	left: 0;
+	  	width: 340px;
+	  	height: 263px;
+	  	opacity: 0.6;
+	  	background: #004098;
+	  }
+	 .navigator .information ul li a , .navigator .admin ul li a,
+	  .navigator .studentAdmin ul li a ,.navigator .system ul li a{
+	 	display: inline-block;
+	 	float: left;
+	 	width: 160px;
+	 	height: 32px;
+	 	line-height: 32px;
+	 	text-align: left;
+	 	padding-left: 15px;
+	 	box-sizing: border-box;
+	 	font-size: 14px;
+	 	color: #fff;
+	 	font-weight: normal;
+	 }
+	 .navigator .information ul li a:hover,.navigator .admin ul li a:hover,.navigator .studentAdmin ul li a:hover,
+	 .navigator .system ul li a:hover{
+	 	color: #9cf;
+	 	background: #0D182A;
+	 }
+	 .navigator .information-hover:hover .information,.navigator .information-hover:hover .admin,.navigator .information-hover:hover .studentAdmin,
+	 .navigator .information-hover:hover .system {
+		display: block;
+	 }
+	 /*二级子菜单   教学管理*/
+
+	 .navigator .admin{
+	 	display: none;
+	 	position: absolute;
+	 	z-index: 100;
+	 	top: 38px;
+	 	left: 0;
+	 	width: 168px;
+	 	height: 70px;
+	  	background: #004098;
+	  	opacity: 0.6;
+	 }
+	 /*二级子菜单  学生管理*/
+
+	 .navigator .studentAdmin{
+	 	display: none;
+	 	position: absolute;
+	 	z-index: 100;
+	 	top: 38px;
+	 	left: 0;
+	 	width: 165px;
+	 	height: 136px;
+	 	background: #004098;
+	  	opacity: 0.6;	 
+	  }
+
+	   /*二级子菜单  信息系统*/
+	   .navigator .system{
+	   	display: none;
+	   	position: absolute;
+	   	z-index: 100;
+	   	top: 38px;
+	   	left: 0;
+	   	width: 326px;
+	   	height: 293px;
+	   	background: #004098;
+	  	opacity: 0.6;
+	   }
+
+	   /*幻灯片放映*/
+	   .slides{
+	   	position: relative;
+	   	width: 100%;
+	   	height: 330px;
+	   	margin-top: 5px;
+	   }
+
+	   /*上一张 下一张按钮*/
+	   .slides .prev,.slides .next  {
+	   		display: inline-block;
+			width: auto;
+			height: 60px;
+			background: #000;
+			position: absolute;
+			top: 50%;
+			margin-top: -20px;
+			box-sizing: border-box;
+			padding: 0 8px;
+			line-height: 60px;
+			color: #fff;
+			font-size: 30px;
+	   }
+	   .slides .next{
+			right:  0px;
+	   }
+	   .slides .welcome{
+	   	display: none;
+	   	width: 100%;
+	   	height: 330px;
+	   	animation-name: change;
+	   	animation-duration: 1.5s;
+	   	animation-timing-function: ease-in-out;
+	   }
+	   @keyframes change{
+	   	from{ opacity: 0.5; }
+	   	to{ opacity: 1; }
+	   }
+	 /*半屏*/
+	 .half-screen{
+	 	width: 100%;
+	 	height: 1500px;
+	 	background: #9A9A9A;
+	 	/*overflow: hidden;*/
+	 }
+	 .half-screen .wrapper{
+	 	width: 1020px;
+	 	height: 1000px;
+	 	margin: 0 auto;
+	 	background: #fff;
+	 }
+	 .half-screen .wrapper-first{
+	 	width: 100%;
+	 	height: 440px;
+	 	/*background: pink;*/
+	 }
+	 .half-screen  .topImage{
+	 	margin-left: 25px;
+	 	margin-top: 10px;
+	 }
+
+
+	 /*首页轮播图*/
+	 .wrapper-first  .photoNews{
+	 	float: left;
+	 }
+	.wrapper #box{
+		position: relative;
+	 	width: 300px;
+	 	height: 260px;
+	 	/*background: brown;*/
+	 	margin-left: 35px;
+	 	margin-top: 10px;
+	 }
+	 .wrapper #box .count{
+	 	position: absolute;
+	 	right: 15px;
+	 	bottom: 40px;
+
+	 }
+	 .wrapper #box .count li{
+	 	width: 16px;
+	 	height: 16px;
+	 	background: #000;
+	 	float: left;
+	 	color:gray;
+	 	line-height: 16px;
+	 	text-align: center;
+	 	font-weight: bolder;
+	 	cursor: pointer;
+
+	 }
+	 .wrapper #box .count li:hover{
+	 	background: #e3e3e3;
+	 }
+	 .wrapper #box .text{
+	 	color: #595959;
+	 	font-weight: bold;
+	 }
+	 .wrapper #box .text:hover{
+	 	color: #004098;
+	 }
+
+	 .wrapper #box .current{
+	 	display: none;
+	 }
+
+	 /*导航选项卡，学校新闻*/
+	.wrapper-first .chooseCard {
+	 	width: 660px;
+	 	height: 334px;
+	 	/*background: pink;*/
+		float: right;
+	 }
+	 .wrapper-first .chooseCard-nav ul li{
+	 	float: left;
+	 	width: 105px;
+	 	height: 32px;
+	 	line-height: 32px;
+	 	cursor: pointer;
+	 }
+	 .wrapper-first .chooseCard-nav {
+	 	width: 100%;
+	 	height: 35px;
+	 	box-sizing: border-box;
+	 	/*background: gray;*/
+	 }
+	 .wrapper-first .chooseCard-nav ul{
+	 	margin-left: 10px;
+	 	margin-top: 10px;
+	 }
+	 .wrapper-first .chooseCard-nav ul li a{
+	 		padding-bottom: 6px;
+	 		margin-right: 10px;
+	 		color: #065397;
+	 		font-size: 22px;
+	 }
+
+	 .wrapper-first .chooseCard-nav ul li a:hover{
+	  	color: #c15708;
+	 }
+	 .wrapper-first .chooseCard-content .important .inform{
+	 	color: red;
+	 	font-weight: bold;
+	 }
+	 .wrapper-first .chooseCard-content{
+			width: 100%;
+			height: 285px;
+			/*background: pink;*/
+			margin-top: 5px;
+	 }
+	 .wrapper-first .chooseCard-content ul{
+ 			margin-left: 8px;
+ 	}
+	 .wrapper-first .chooseCard-content ul li{
+	 	color: #065397;
+	 	position: relative;
+	 	list-style-type: square;
+	 	list-style-position: inside;
+	 	font-size: 13px;
+	 	height: 28px;
+	 	line-height: 28px;
+	 }
+	 .wrapper-first .chooseCard-content ul li span{
+	 	position: absolute;
+	 	right: 40px;
+	 	top: 0;
+	 	color: #000000;
+	 }
+	  .wrapper-first .chooseCard-content ul li a:hover{
+	  	color: #c15708;
+	  }
+
+	 .wrapper-first .chooseCard-content div{
+	 	display: none;
+	 }
+
+
+	 /*图片新闻下的分类操作*/
+	 .wrapper-first  .sort{
+	 	clear: both;
+	 	float: left;
+	 	width: 880px;
+	 	height: 60px;
+	 	/*background: pink;*/
+	 	margin: 20px 70px;
+
+	 }
+	 .wrapper-first  .sort-first{
+	 	width: 62px;
+	 	height: 60px;
+	 	float: left;
+	 	/*background: green;*/
+	 }
+	 .wrapper-first  .sort-first .student,.wrapper-first  .sort-first .teacher,.wrapper-first  .sort-first .oldboy,.wrapper-first  .sort-first .examinee{
+	 	display: inline-block;
+	 	width: 30px;
+	 	height: 30px;
+	 	background: #595959;
+	 	opacity: 0.5;
+	 	line-height: 30px;
+	 	color: #fff;
+	 	font-size: 10px;
+	 	text-align: center;
+	 }
+	 .wrapper-first  .sort-first .student{
+	 	border-top-right-radius: 8px;
+	 	border-bottom-left-radius: 8px;
+	 }
+	 .wrapper-first  .sort-first .student:hover{
+	 	opacity: 0.7;
+	 	background: #c15708;
+	 }
+	 .wrapper-first  .sort-first .teacher{
+	 	float: right;
+	 	margin-left: 1px;
+	 	border-top-left-radius: 8px;
+	 	border-bottom-right-radius: 8px;
+	 }
+	 .wrapper-first  .sort-first .teacher:hover{
+	 	opacity: 0.9;
+	 	background: green;
+	 }
+	 .wrapper-first  .sort-first .oldboy{
+	 	margin-top: 1px;
+	 	border-top-left-radius: 8px;
+	 	border-bottom-right-radius: 8px;
+	 }
+	 .wrapper-first  .sort-first .oldboy:hover{
+	 	opacity: 0.8;
+	 	background: #004098;
+	 }
+	 .wrapper-first  .sort-first .examinee{
+	 	float: right;
+	 	margin-top: 1px;
+	 	margin-left: 1px;
+	 	border-top-right-radius: 8px;
+	 	border-bottom-left-radius: 8px;
+	 }
+	 .wrapper-first  .sort-first .examinee:hover{
+	 	opacity: 1;
+	 	background: #c15708;
+	 }
+		/*分类右面*/
+	 .wrapper-first .sort  .sort-right{
+	 	width: 818px;
+	 	height: 100%;
+	 	/*background: green;*/
+	 	float: left;
+	 }
+	 .sort  .sort-right a{
+	 	display: inline-block;
+	 	width: 70px;
+	 	height: 55px;
+		margin-left: 25px;
+	 }	
+	 .sort  .sort-right .bg1{
+	 	background: url(http://10.100.100.101/NewCSS/img/a11.png);
+	 }
+	 .sort  .sort-right .bg1:hover{
+	 	background: url(http://10.100.100.101/NewCSS/img/a1.png);
+	 }
+	 .sort  .sort-right .bg2{
+	 	background: url(http://10.100.100.101/NewCSS/img/a22.png);
+	 }
+	 .sort  .sort-right .bg2:hover{
+	 	background: url(http://10.100.100.101/NewCSS/img/a2.png);
+	 }
+	 .sort  .sort-right .bg3{
+	 	background: url(http://10.100.100.101/NewCSS/img/a33.png);
+	 }
+	 .sort  .sort-right .bg3:hover{
+	 	background: url(http://10.100.100.101/NewCSS/img/a3.png);
+	 }
+	 .sort  .sort-right .bg4{
+	 	background: url(http://10.100.100.101/NewCSS/img/a44.png);
+	 }
+	  .sort  .sort-right .bg4:hover{
+	 	background: url(http://10.100.100.101/NewCSS/img/a4.png);
+	 }
+	 .sort  .sort-right .bg5{
+	 	background: url(http://10.100.100.101/NewCSS/img/a55.png);
+	 }
+	 .sort  .sort-right .bg5:hover{
+	 	background: url(http://10.100.100.101/NewCSS/img/a5.png);
+	 }
+	 .sort  .sort-right .bg6{
+	 	background: url(http://10.100.100.101/NewCSS/img/a66.png);
+	 }
+	 .sort  .sort-right .bg6:hover{
+	 	background: url(http://10.100.100.101/NewCSS/img/a6.png);
+	 }
+	 
+	  .wrapper-first .sort  .sort-right>li{
+	  		position: relative;
+	  		display: inline-block;
+			width: 70px;
+	 		height: 55px;
+	  }
+	 /* .wrapper-first .sort  .sort-right .teaching{
+	  	position: absolute;
+	  	top: -268px;
+	  	left: -135px;
+	  	z-index: 100;
+	  	overflow-y:  scroll;
+	  	width: 243px;
+	  	height: 264px;
+	  	border:2px solid #065397;
+	  }*/
+	  
